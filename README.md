@@ -58,7 +58,7 @@ You can run the simulation scripts directly from the terminal.
 
 ## Visual Results
 
-The simulations demonstrate how the Modified Zero-Vibration (MZV) profile significantly reduces the fluid's sloshing compared to a simple profile (like a Trapezoidal, not shown) or even the basic Zero-Vibration (ZV) profile.
+The simulations demonstrate how the Modified Zero-Vibration (MZV) profile significantly reduces the fluid's sloshing compared to a simple profile (like a Trapezoidal).
 
 ### Liquid with Trapezoidal Profile
 ![Liquid Sloshing under the Trapezoidal profile](assets/liquid-trapezoidal.gif)
