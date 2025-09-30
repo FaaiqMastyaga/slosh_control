@@ -56,6 +56,20 @@ You can run the simulation scripts directly from the terminal.
     python "Liquid Simulation/slosh-control.py"
     ```
 
+## Visual Results
+
+The simulations demonstrate how the Modified Zero-Vibration (MZV) profile significantly reduces the fluid's sloshing compared to a simple profile (like a Trapezoidal, not shown) or even the basic Zero-Vibration (ZV) profile.
+
+### Liquid with Trapezoidal Profile
+![Liquid Sloshing under the Trapezoidal profile](assets/liquid-trapezoidal.gif)
+
+### Liquid with Modified Zero-Vibration (MZV) Profile
+![Liquid Sloshing under the Modified Zero-Vibration profile](assets/liquid-mzv.gif)
+
+
+
+
+
 
 
 
