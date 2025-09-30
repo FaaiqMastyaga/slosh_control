@@ -49,3 +49,15 @@ You can run the simulation scripts directly from the terminal.
     | `desired_velocity` | The target steady-state velocity (in mm/s). |
     | `profile` | The motion profile to use. Choose from `trapezoidal`, `zero_vibration`, or `modified_zero_vibration`. |
     | `T` | The Natural period of the sloshing, typically derived from running slosh-impulse.py. |
+
+    After setting the parameters, run the control simulation:
+    
+    ```
+    python "Liquid Simulation/slosh-control.py"
+    ```
+
+
+
+
+
+
