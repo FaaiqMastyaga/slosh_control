@@ -1,14 +1,14 @@
 # Slosh Control Simulation
 
-This repository contains Python scripts for simulating liquid sloshing in a container (cart) subjected to controlled acceleration profiles. The goal is to evaluate different velocity profiles—namely, **Trapezoidal**, **Zero-Vibration (ZV)**, and **Modified Zero-Vibration (MZV)**—to minimize unwanted liquid oscillation.
+This repository contains Python scripts for simulating liquid sloshing in a container (cart) subjected to controlled acceleration profiles. The goal is to evaluate different velocity profiles—namely, **Trapezoidal**, **Zero Vibration (ZV)**, and **Zero Vibration with Derivative (ZVD)**—to minimize unwanted liquid oscillation.
 
 The simulation uses the **Fluid Engine Development library** (Fluid-Engine-Dev) via its Python API, `pyjet`, specifically utilizing the **APIC (Affine Particle-in-Cell) fluid solver** to model the liquid behavior.
 
 ## Project Contents
 
-* `Liquid Simulation/slosh-impulse.py`: A utility script to simulate a short impulse force on the fluid. This is typically used to excite the liquid and visually determine the **natural period** of the sloshing, a critical parameter for tuning the ZV and MZV profiles.
+* `Liquid Simulation/slosh-impulse.py`: A utility script to simulate a short impulse force on the fluid. This is typically used to excite the liquid and visually determine the **natural period** of the sloshing, a critical parameter for tuning the ZV and ZVD profiles.
 * `Liquid Simulation/slosh-control.py`: The main simulation script. It runs the sloshing experiment using a chosen velocity profile over a set travel distance and plots the resulting sloshing amplitude over time.
-* `Liquid Simulation/VelocityProfile.py`: Contains the implementation for generating the velocity profiles (Trapezoidal, ZV, and MZV).
+* `Liquid Simulation/VelocityProfile.py`: Contains the implementation for generating the velocity profiles (Trapezoidal, ZV, and ZVD).
 
 ## Dependencies
 
@@ -58,13 +58,13 @@ You can run the simulation scripts directly from the terminal.
 
 ## Visual Results
 
-The simulations demonstrate how the Modified Zero-Vibration (MZV) profile significantly reduces the fluid's sloshing compared to a simple profile (like a Trapezoidal).
+The simulations demonstrate how the Zero Vibration Derivative (ZVD) profile significantly reduces the fluid's sloshing compared to a simple profile (like a Trapezoidal).
 
 ### Liquid with Trapezoidal Profile
 ![Liquid Sloshing under the Trapezoidal profile](assets/liquid-trapezoidal.gif)
 
-### Liquid with Modified Zero-Vibration (MZV) Profile
-![Liquid Sloshing under the Modified Zero-Vibration profile](assets/liquid-mzv.gif)
+### Liquid with Zero Vibration Derivative (ZVD) Profile
+![Liquid Sloshing under the Zero Vibration Derivative profile](assets/liquid-mzv.gif)
 
 
 
